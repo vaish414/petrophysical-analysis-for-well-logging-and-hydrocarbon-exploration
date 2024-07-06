@@ -84,3 +84,72 @@ Learning Curves: Plots of training and validation loss for the neural network, h
 Linear Regression provided a good baseline with interpretable results.
 Random Forest outperformed other models in terms of accuracy (R-squared = 0.96), suggesting it is well-suited for this prediction task due to its ability to handle non-linear relationships and large feature sets.
 Neural Network required careful tuning and more computational resources but did not perform as well as Random Forest in this case, indicating potential issues with overfitting or the need for more data.
+
+## 2.Lithology Classification:
+
+### Project Overview
+Lithology classification is crucial in geophysical studies for understanding subsurface geology. In this project, we use machine learning techniques to predict lithologies from geophysical features. The project involves data preprocessing, feature extraction, model training, and evaluation.
+
+### Dataset
+The dataset used in this project contains depth intervals and geophysical features. The target variable is the lithology class.
+The dataset includes well log data with the following columns:
+TopDepth
+BotDepth	
+_CAL - Caliper	
+_GR	- Gamma Ray
+_SP	- Spontaneous Potential
+_LLD - Deep Resistivity
+_LLS - Shallow Resistivity	
+_AC - Accoustic Log	
+_DEN - Density log	
+_PEF - Photoelectric effect
+Lith_Section
+
+### Models Used
+We explored various machine learning models for lithology classification. The models and their respective characteristics are listed below:
+
+### 1. Long Short-Term Memory (LSTM) Neural Network
+- **Description**: LSTM is a type of recurrent neural network (RNN) that is well-suited for sequence modeling tasks. It can capture long-term dependencies and temporal relationships within the data.
+- **Advantages**:
+  - Effective in capturing temporal dependencies in sequential data.
+  - Can handle varying sequence lengths.
+- **Disadvantages**:
+  - Computationally intensive and time-consuming to train.
+  - Requires a large amount of data to perform well.
+- **Accuracy**: 65.8%
+
+### 2. XGBoost Classifier
+- **Description**: XGBoost is an efficient and scalable implementation of gradient boosting framework. It is known for its speed and performance.
+- **Advantages**:
+  - High performance and accuracy.
+  - Efficient handling of missing data.
+  - Supports regularization to prevent overfitting.
+- **Disadvantages**:
+  - Requires careful tuning of hyperparameters.
+  - Can be complex to interpret compared to simpler models.
+- **Accuracy**: TBD (This should be updated with the final accuracy after hyperparameter tuning)
+
+### 3. Random Forest Classifier
+- **Description**: Random Forest is an ensemble learning method that constructs multiple decision trees and merges their results to improve accuracy and reduce overfitting.
+- **Advantages**:
+  - Robust to overfitting due to ensemble averaging.
+  - Can handle high-dimensional data well.
+- **Disadvantages**:
+  - Can be computationally expensive for large datasets.
+  - May require significant memory.
+- **Accuracy**: TBD
+
+### Support Vector Machine (SVM)
+- **Description**: SVM is a supervised learning model that finds the optimal hyperplane to separate different classes in the feature space.
+- **Advantages**:
+  - Effective in high-dimensional spaces.
+  - Robust to overfitting, especially in high-dimensional data.
+- **Disadvantages**:
+  - Not well-suited for very large datasets.
+  - Can be sensitive to the choice of kernel and hyperparameters.
+- **Accuracy**: TBD
+
+### Results
+- The LSTM model achieved an accuracy of 65.8%.
+- The XGBoost model is under hyperparameter tuning to determine its final accuracy.
+- Random Forest and SVM models' accuracies will be determined after evaluation.
