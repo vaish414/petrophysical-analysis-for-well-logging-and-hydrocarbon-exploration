@@ -19,7 +19,7 @@ Machine Learning Models for Well Log Analysis
 
 ## 1.DPOR Prediction:
 
-###Data Description
+### Data Description
 The dataset includes well log data with the following columns:
 DPOR - Density Porosity
 GR - Gamma Ray
@@ -30,7 +30,7 @@ RLL3 - Shallow Resistivity
 SP - Spontaneous Potential
 SPOR - Sonic Porosity
 
-###Models and Results:
+### Models and Results:
 - Linear Regression
 Description: Linear Regression is a simple and interpretable model that assumes a linear relationship between the input features and the target variable.
 Performance:
@@ -57,7 +57,7 @@ Cons:
 Computationally intensive, especially with large datasets and many trees.
 Less interpretable than linear models.
 
--Neural Network
+- Neural Network
 Description: Neural Networks are a class of models inspired by the human brain, capable of capturing complex relationships between inputs and outputs through multiple layers of interconnected nodes.
 Performance:
 The performance metrics of the neural network were less favorable compared to Random Forest.
@@ -70,7 +70,7 @@ Prone to overfitting, especially with small datasets.
 Requires more computational resources and careful tuning of hyperparameters.
 Less interpretable compared to simpler models.
 
--Visualization
+### Visualization
 Actual vs. Predicted DPOR: Scatter plots and line plots comparing the actual and predicted DPOR values for both Linear Regression and Random Forest models.
 ![dpor_actual_vs_predicted](https://github.com/vaish414/petrophysical-analysis-for-well-logging-and-hydrocarbon-exploration/assets/106098796/bedcffdd-e79b-4d4d-ad19-036bba41cf68)
 
@@ -80,7 +80,7 @@ Learning Curves: Plots of training and validation loss for the neural network, h
 ![FNN_DPOR](https://github.com/vaish414/petrophysical-analysis-for-well-logging-and-hydrocarbon-exploration/assets/106098796/7e5efd7f-aebc-4780-a1f3-ad461ef67821)
 
 
--Conclusion
+### Conclusion
 Linear Regression provided a good baseline with interpretable results.
 Random Forest outperformed other models in terms of accuracy (R-squared = 0.96), suggesting it is well-suited for this prediction task due to its ability to handle non-linear relationships and large feature sets.
 Neural Network required careful tuning and more computational resources but did not perform as well as Random Forest in this case, indicating potential issues with overfitting or the need for more data.
