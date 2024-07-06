@@ -84,8 +84,3 @@ Learning Curves: Plots of training and validation loss for the neural network, h
 Linear Regression provided a good baseline with interpretable results.
 Random Forest outperformed other models in terms of accuracy (R-squared = 0.96), suggesting it is well-suited for this prediction task due to its ability to handle non-linear relationships and large feature sets.
 Neural Network required careful tuning and more computational resources but did not perform as well as Random Forest in this case, indicating potential issues with overfitting or the need for more data.
-
--Future Work
-Hyperparameter Tuning: Further refinement of hyperparameters for neural networks to improve performance.
-Feature Engineering: Exploring additional features or transformations to enhance model accuracy.
-Model Interpretability: Using techniques like SHAP values to interpret model predictions, especially for complex models like Random Forest and Neural Networks.
